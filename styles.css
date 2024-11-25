@@ -1,0 +1,234 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: #005f56;
+  text-align: center;
+  margin: 40px 0;
+  font-weight: 700;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+header p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Main Layout */
+.container {
+  display: flex;
+  padding: 40px;
+}
+
+.left-sidebar {
+  width: 240px;
+  background-color: #00695c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-sidebar h2 {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.left-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.left-sidebar ul li {
+  margin: 15px 0;
+}
+
+.left-sidebar ul li a {
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.left-sidebar ul li a:hover {
+  color: #ff9800;
+}
+
+.left-sidebar ul li i {
+  margin-right: 10px;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  margin-left: 40px;
+}
+
+.resource {
+  background-color: #fff;
+  margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.resource:hover {
+  transform: scale(1.03);
+}
+
+.resource h2 {
+  font-size: 2rem;
+  color: #005f56;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.resource p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.resource button {
+  padding: 10px 20px;
+  background-color: #ff9800;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resource button:hover {
+  background-color: #e68900;
+}
+
+/* Horizontal Scroll */
+.horizontal-scroll {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.bookmarks, .recent-books {
+  width: 48%;
+}
+
+.bookmarks h2, .recent-books h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #005f56;
+  text-align: center;
+  font-weight: 600;
+}
+
+.bookmarks ul, .recent-books ul {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+}
+
+.bookmarks li, .recent-books li {
+  width: 150px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.bookmarks li:hover, .recent-books li:hover {
+  transform: scale(1.1);
+}
+
+.bookmarks img, .recent-books img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.bookmarks p, .recent-books p {
+  font-size: 1rem;
+  color: #005f56;
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  background-color: #005f56;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.feedback textarea {
+  width: 80%;
+  height: 120px;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  transition: border 0.3s ease;
+}
+
+.feedback textarea:focus {
+  border: 2px solid #ff9800;
+}
+
+.feedback button {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  background-color: #ff9800;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback button:hover {
+  background-color: #e68900;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .left-sidebar {
+      width: 100%;
+      margin-bottom: 30px;
+  }
+
+  .main-content {
+      margin-left: 0;
+  }
+
+  .horizontal-scroll {
+      flex-direction: column;
+  }
+
+  .bookmarks, .recent-books {
+      width: 100%;
+  }
+}
+
