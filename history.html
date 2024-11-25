@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Category - Educational Resource Finder</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #8B0000, #FF4500);
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(120deg, #FF4500, #8B0000);
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+        }
+
+        /* Section Styles */
+        .book-section {
+            padding: 30px;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+        .book-section h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Book Card Styles */
+        .book-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .book-card {
+            width: 250px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .book-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .book-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .book-card p {
+            margin: 0;
+            padding: 15px;
+            font-size: 1.2rem;
+            color: #555;
+            font-weight: bold;
+        }
+        .book-card a {
+            display: inline-block;
+            margin: 15px 0;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(120deg, #8B0000, #FF4500);
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        .book-card a:hover {
+            background: linear-gradient(120deg, #FF4500, #8B0000);
+            transform: translateY(-2px);
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #4C0000;
+            color: white;
+            margin-top: 30px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+        }
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            .book-card {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>History Collection</h1>
+        <p>Dive into the past with these iconic history books</p>
+    </header>
+
+    <div class="book-section">
+        <h2>Top History Books</h2>
+        <div class="book-container">
+            <!-- Book 1 -->
+            <div class="book-card">
+                <img src="https://books.google.co.in/books/publisher/content?id=1EiJAwAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U2nf4ZzBE_NFma6-FTPoPwEmL0_oA&w=1280" alt="Sapiens">
+                <p>Sapiens: A Brief History of Humankind</p>
+                <a href="https://www.google.co.in/books/edition/Sapiens/1EiJAwAAQBAJ?hl=en&gbpv=1&dq=A+Brief+History+of+Humankind&printsec=frontcover" target="_blank">Open Book</a>
+            </div>
+            <!-- Book 2 -->
+            <div class="book-card">
+                <img src="https://books.google.co.in/books/content?id=jNQd9RpuJ-4C&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U1cuT9-TZkog57-BgxFnMroR5_RXA&w=1280" alt="Collapse
+                How Societies Choose to Fail Or Survive
+                ">
+                <p>Collapse
+                    How Societies Choose to Fail Or Survive
+                    </p>
+                <a href="https://www.google.co.in/books/edition/Collapse/jNQd9RpuJ-4C?hl=en&gbpv=1" target="_blank">Open Book</a>
+            </div>
+            <!-- Book 3 -->
+            <div class="book-card">
+                <img src="https://books.google.co.in/books/publisher/content?id=M1FFCQAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U351VbfgaDmZL_QoRI0CgLv37w65Q&w=1280" alt="The Silk Roads">
+                <p>The Silk Roads: A New History of the World</p>
+                <a href="https://www.google.co.in/books/edition/The_Silk_Roads/M1FFCQAAQBAJ?hl=en&gbpv=1&dq=the+silk+road&printsec=frontcover" target="_blank">Open Book</a>
+            </div>
+            <!-- Book 4 -->
+            <div class="book-card">
+                <img src="https://books.google.co.in/books/content?id=HmShg3dnLSMC&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U0FHcBOQjjp8RuZ5zcGHSxaby0s5A&w=1280" alt="The History of the Ancient World">
+                <p>The History of the Ancient World</p>
+                <a href="https://www.google.co.in/books/edition/The_History_of_the_Ancient_World_From_th/HmShg3dnLSMC?hl=en&gbpv=1&dq=The+History+of+the+Ancient+World&printsec=frontcover" target="_blank">Open Book</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Educational Resource Finder © 2024 | Designed by Ronak</p>
+    </footer>
+</body>
+</html>

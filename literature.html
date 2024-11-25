@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literature Category - Educational Resource Finder</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #4B0082, #8A2BE2);
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(120deg, #8A2BE2, #4B0082);
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+        }
+
+        /* Section Styles */
+        .book-section {
+            padding: 30px;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+        .book-section h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Book Card Styles */
+        .book-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .book-card {
+            width: 250px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .book-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .book-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .book-card p {
+            margin: 0;
+            padding: 15px;
+            font-size: 1.2rem;
+            color: #555;
+            font-weight: bold;
+        }
+        .book-card a {
+            display: inline-block;
+            margin: 15px 0;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(120deg, #4B0082, #8A2BE2);
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        .book-card a:hover {
+            background: linear-gradient(120deg, #8A2BE2, #4B0082);
+            transform: translateY(-2px);
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2E0854;
+            color: white;
+            margin-top: 30px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+        }
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            .book-card {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Literature Collection</h1>
+        <p>Explore timeless classics and literary masterpieces</p>
+    </header>
+
+    <div class="book-section">
+        <h2>Top Literature Books</h2>
+        <div class="book-container">
+            <!-- Book 1 -->
+            <div class="book-card">
+                <img src="https://books.google.co.in/books/content?id=5GbdTc9OJ78C&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U0JTzSu49_9bJjYf9UdaTvEetbUTQ&w=1280" alt="Pride and Prejudice">
+                <p>Pride and Prejudice</p>
+                <a href="https://www.google.co.in/books/edition/_/5GbdTc9OJ78C?hl=en&gbpv=1" target="_blank">Open Book</a>
+            </div>
+            <!-- Book 2 -->
+            <div class="book-card">
+                <img src="https://cdn.britannica.com/21/182021-050-666DB6B1/book-cover-To-Kill-a-Mockingbird-many-1961.jpg" alt="To Kill a Mockingbird">
+                <p>To Kill a Mockingbird</p>
+                <a href="https://www.google.co.in/books/edition/To_Kill_a_Mockingbird/PGR2AwAAQBAJ?hl=en&gbpv=1&dq=to+kill+a+mockingbird&printsec=frontcover" target="_blank">Open Book</a>
+            </div>
+            <!-- Book 3 -->
+            <div class="book-card">
+                <img src="https://books.google.co.in/books/publisher/content?id=1L-jEAAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U1LSuZHj_JKeB0H0VlTuYzOlskytA&w=1280" alt="1984 by George Orwell">
+                <p>1984 by George Orwell</p>
+                <a href="https://www.google.co.in/books/edition/Nineteen_eighty_four/1L-jEAAAQBAJ?hl=en&gbpv=1&dq=1984+by+george+well&printsec=frontcover" target="_blank">Open Book</a>
+            </div>
+            <!-- Book 4 -->
+            <div class="book-card">
+                <img src="https://books.google.co.in/books/publisher/content?id=acb8EAAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U1nt52okwQBCfd9miir2TxqgdueEQ&w=1280" alt="The Great Gatsby">
+                <p>The Great Gatsby</p>
+                <a href="https://www.google.co.in/books/edition/The_Great_Gatsby/acb8EAAAQBAJ?hl=en&gbpv=1&dq=The+Great+Gatsby&printsec=frontcover" target="_blank">Open Book</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Educational Resource Finder © 2024 | Designed by Ronak</p>
+    </footer>
+</body>
+</html>

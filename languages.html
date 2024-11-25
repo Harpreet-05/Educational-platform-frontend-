@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Languages Category - Educational Resource Finder</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #FF4500, #FF6347);
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(120deg, #FF6347, #FF4500);
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+        }
+
+        /* Section Styles */
+        .book-section {
+            padding: 30px;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+        .book-section h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Book Card Styles */
+        .book-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .book-card {
+            width: 250px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .book-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .book-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .book-card p {
+            margin: 0;
+            padding: 15px;
+            font-size: 1.2rem;
+            color: #555;
+            font-weight: bold;
+        }
+        .book-card a {
+            display: inline-block;
+            margin: 15px 0;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(120deg, #FF4500, #FF6347);
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        .book-card a:hover {
+            background: linear-gradient(120deg, #FF6347, #FF4500);
+            transform: translateY(-2px);
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #B22222;
+            color: white;
+            margin-top: 30px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+        }
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            .book-card {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Languages Collection</h1>
+        <p>Explore books from various languages and cultures</p>
+    </header>
+
+    <div class="book-section">
+        <h2>Top Language Books</h2>
+        <div class="book-container">
+            <!-- Book 1 -->
+            <div class="book-card">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYSW_x0EMtOwXf0jzNu4p_jeNQlAWkfVgUACJPcSbFKoOOH6l185Io7PCdR8ufrnepRodf-g" alt="Chaar Sahibzaade">
+                <p>ਚਾਰ ਸਾਹਿਬਜ਼ਾਦੇ (punjabi)</p>
+                <a href="https://sikhbookclub.com/Book/Chaar-Sahibzade target="_blank">Open Book</a>
+            </div>
+            <!-- Book 2 -->
+            <div class="book-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9mkakP6BxtIoZ16Hou06E7C4W_UWx0JEiJg&s" alt="Zafarnama">
+                <p>زفارنما (persian)</p>
+                <a href="https://books.google.co.in/books?id=NLByIq9wfHYC&pg=PA1&source=gbs_selected_pages&cad=1#v=onepage&q&f=false" target="_blank">Open Book</a>
+            </div>
+            <!-- Book 3 -->
+            <div class="book-card">
+                <img src="https://myonlinebookshop.pk/cdn/shop/products/IMG-20220513-WA0053_540x.jpg?v=1652460541" alt="Parizaad">
+                <p>پریزاد(urdu) </p>
+                <a href="https://ia903007.us.archive.org/34/items/PardesiDarkht/Parizad.pdf" target="_blank">Open Book</a>
+            </div>
+            <!-- Book 4 (Urdu) -->
+            <div class="book-card">
+                <img src="https://books.google.co.in/books/publisher/content?id=1O_TBQAAQBAJ&pg=PA1&img=1&zoom=3&hl=en&sig=ACfU3U2y8LExIa6jwNmlzWCaqdY9APHDJA&w=1280" alt="गुनाहों का देवता">
+                <p>गुनाहों का देवता (Hindi)</p>
+                <a href="https://books.google.co.in/books?id=1O_TBQAAQBAJ&pg=PT8&source=gbs_toc_r&cad=1#v=onepage&q&f=false" target="_blank">Open Book</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Educational Resource Finder © 2024 |
